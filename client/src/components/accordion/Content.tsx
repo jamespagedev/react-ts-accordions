@@ -23,7 +23,7 @@ function Content({isCollapsed, children}: Props): JSX.Element {
       className="accordion-content"
       style={isCollapsed ? {maxHeight: '0px'} : {maxHeight: `${componentHeight.current}px`}}
     >
-      {children}
+      <div>{children}</div>
     </div>
   );
 }

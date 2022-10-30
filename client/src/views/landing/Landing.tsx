@@ -10,7 +10,11 @@ function Landing(): JSX.Element {
       <Accordion>
         {data.accordion.items.map(item => (
           <ItemWrapper key={item.id} title={item.title}>
-            <p>{item.ipsum}</p>
+            {item.ipsum.map((ipsum, i) => (
+              <p key={i} className="ipsum-content">
+                {ipsum}
+              </p>
+            ))}
           </ItemWrapper>
         ))}
       </Accordion>
