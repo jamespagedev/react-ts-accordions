@@ -19,6 +19,6 @@
     "target": "esnext",
     "useUnknownInCatchVariables": true
   },
-  "exclude": ["node_modules", "jest.config.js", "src/**/*.spec*"],
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "jest.config.js", "src/**/*.spec*"]
 }
