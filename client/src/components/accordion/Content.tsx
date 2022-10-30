@@ -8,12 +8,13 @@ interface Props {
 function Content({isCollapsed, children}: Props): JSX.Element {
   // variables
   const contentEl = useRef(null);
-  const componentHeight = useRef(200);
+  // const componentHeight = useRef(200);
+  const componentHeight = useRef(0);
   console.log('componentHeight:', componentHeight.current);
 
   // setup
   useLayoutEffect(() => {
-    // componentHeight.current = contentEl.current ? contentEl.current.scrollHeight : 0;
+    componentHeight.current = contentEl.current ? contentEl.current.scrollHeight : 0;
   }, []);
 
   // render
