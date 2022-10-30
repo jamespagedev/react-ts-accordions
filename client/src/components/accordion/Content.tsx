@@ -7,8 +7,7 @@ interface Props {
 
 function Content({isCollapsed, children}: Props): JSX.Element {
   // variables
-  const contentEl = useRef(null);
-  // const componentHeight = useRef(200);
+  const contentEl = useRef<any>(null);
   const componentHeight = useRef(0);
   console.log('componentHeight:', componentHeight.current);
 
