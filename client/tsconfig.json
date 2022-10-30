@@ -16,7 +16,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext",
+    "target": "es5",
     "useUnknownInCatchVariables": true
   },
   "include": ["src"],
